@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Sphere(:</h1>
+            <p>Input radius value and get the volume of a sphere.</p>
+        </div>
+
+        <br>
+        <form class="well" action="" method="post" id="MyForm">
+            <label for="radius">Radius:</label><input class="form-control" type="text" name="radius" id="radius"
+                required>
+            <br>
+            <br>
+            <label for="volume">Volume:</label><input class="form-control" type="text" name="volume"
+                id="volume"><br><br>
+            <input class="btn btn-primary" type="submit" value="Calculate" id="submit">
+            <input  onclik="clear()" class="btn btn-primary" type="clear" value="clear" id="clear">
+
+        </form>
+        <br>
+        <canvas class="well" id="myCanvas" width="300" height="300" style="border:5px solid #181515;"></canvas>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
